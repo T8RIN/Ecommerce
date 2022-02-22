@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingBottom="30dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_background_secondary_10"
+        android:contentDescription="@string/explorer"
+        android:scaleType="centerInside"
+        android:src="@drawable/x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/filter_options"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/done"
+        app:layout_constraintEnd_toStartOf="@+id/done"
+        app:layout_constraintStart_toEndOf="@+id/close"
+        app:layout_constraintTop_toTopOf="@+id/done" />
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="86dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_background_primary_10"
+        android:contentDescription="@string/explorer"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/x"
+        android:text="@string/done"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="31dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/close">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brand"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_container">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="14dp"
+                android:gravity="center|start"
+                android:text="@string/samsung"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/range"
+                android:src="@drawable/arrow_down"
+                app:layout_constraintBottom_toBottomOf="@+id/location_text"
+                app:layout_constraintStart_toEndOf="@+id/location_text"
+                app:layout_constraintTop_toTopOf="@+id/location_text" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_container">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="14dp"
+                android:gravity="center|start"
+                android:text="@string/range"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/dropdown"
+                android:src="@drawable/arrow_down"
+                app:layout_constraintBottom_toBottomOf="@+id/location_text"
+                app:layout_constraintStart_toEndOf="@+id/location_text"
+                app:layout_constraintTop_toTopOf="@+id/location_text" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/size"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_container">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="14dp"
+                android:gravity="center|start"
+                android:text="@string/inchRange"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/dropdown"
+                android:src="@drawable/arrow_down"
+                app:layout_constraintBottom_toBottomOf="@+id/location_text"
+                app:layout_constraintStart_toEndOf="@+id/location_text"
+                app:layout_constraintTop_toTopOf="@+id/location_text" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
