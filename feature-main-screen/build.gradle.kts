@@ -1,29 +1,25 @@
 plugins {
-    id("com.android.application")
-    id("kotlin-android")
+    id("com.android.library")
+    id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
 }
 
 android {
-    namespace = "ru.tech.ecommerce"
+    namespace = "ru.tech.feature_main_screen"
     compileSdk = 32
 
     defaultConfig {
-        applicationId = "ru.tech.ecommerce"
         minSdk = 21
         targetSdk = 32
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
         release {
             isMinifyEnabled = true
-            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -85,8 +81,5 @@ dependencies {
 
     //Coil
     implementation("io.coil-kt:coil:1.1.1")
-
-    //Modules
-    implementation(project(path = ":feature-main-screen"))
 
 }

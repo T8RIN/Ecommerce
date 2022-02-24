@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Ecommerce</string>
+    <string name="locationSample">Zihuatanejo, Gro</string>
+    <string name="filter">Filter</string>
+    <string name="dropdown">Dropdown</string>
+    <string name="selectCategory">Select Category</string>
+    <string name="viewAll">view all</string>
+    <string name="phones">Phones</string>
+    <string name="computer">Computer</string>
+    <string name="health">Health</string>
+    <string name="books">Books</string>
+    <string name="search">Search</string>
+    <string name="hotSales">Hot sales</string>
+    <string name="seeMore">see more</string>
+    <string name="new_">New</string>
+    <string name="title">Title</string>
+    <string name="buy_now">Buy now!</string>
+    <string name="bestSeller">Best Seller</string>
+    <string name="like">like</string>
+    <string name="explorer">Explorer</string>
+    <string name="done">Done</string>
+    <string name="filter_options">Filter options</string>
+    <string name="brand">Brand</string>
+    <string name="price">Price</string>
+    <string name="size">Size</string>
+    <string name="samsung">Samsung</string>
+    <string name="range">$300 - $500</string>
+    <string name="inchRange">4.5 to 5.5 inches</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
